@@ -1,0 +1,14 @@
+2048-peli
+
+Pelin käynniestäessä pelaajalle annetaan tilaisuus valita pelissä tavoiteltava maalinumero ja pelin siemenluku. Kun painetaan start peli alkaa.
+Maalinumero voi olla pienimmillään 4 ja suurimmillaan 2048. 
+Peli tarkoituksena on yhdistää 4X4 ruudukossa samanvärisiä ruutuja kunnes saavutetaan maaliarvo. Tällöin peli on voitettu. Peli alkaa siten, että pelilaudalle generoidaan 4 luvun 2 arvoista ruutua satunnaisiin siemenluvun perusteella valittuihin paikkoihin. Pelin ruutuja voi liikuttaa WASD -näppäimillä. Näppäin W liikuttaa ruutuja ylös, S alas, A vasemmalle ja D oikealle. Kun kaksi saman arvoista törmäävät, niin ne yhdistyvät ja niiden arvot summautuvat.
+Aina kun ruutuja siirretään johonkin suuntaan, generoidaan laudalle uusi luvun 2 arvoinen ruutu. Mikäli lauta on täynnä, maaliarvoon ei päästy ja uutta ruutua ei voida luoda, on peli hävitty.
+Peli voidaan missä tahansa vaiheessa lopettaa ja aloittaa alusta painamalla näppäintä reset.
+
+Lisäominaisuus 2: Eri luvuilla on eri värit.
+Lisäominaisuus 8: Pelissä saadaan pisteitä joka kerta kun 2 samanarvoista ruutua yhdistyy. Yhdistyksestä saatu pistemäärä on yhdistetyn ruudun arvon verran.
+Lisäominaisuus 10: Peli kirjaa ylös parhaat pistemäärät. Jos käyttäjä on luonut ohjelman build-kansioon scores.txt nimisen lähdetiedoston, lukee ohjelma sieltä suurimman pistemäärän. Mikäli pistemääriä ei ole, oletetaan suurimmaksi pistemääräksi 0. Kun tiedoston sisältämä suurin pistemäärä ylitetään ja peli aloitetaan alusta, kirjataan pelin pistemäärä tiedostoon. Kun ohjelma käynnistetään uudestaan lukee ohjelma suurimman pistemäärän tästä tiedostosta. Jos tiedostoa ei ole, oletetaan ennätyspistemääräksi nolla ja pistemääriä ei talleteta. Jos tiedoston rivillä esiintyy muita kuin numeroja, hylätään kyseinen rivi.
+Lisäominaisuus 11: Ohjelma hyväksyy maaliarvoiksi vain kahden potensseja
+Lisäominaisuus 12: Käyttöliittymän taustaväri muuttuu punaiseksi kun peli hävitään ja vihreäksi kun se voitetaan.
+
